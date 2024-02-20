@@ -10,7 +10,7 @@
  
   </head>
   <body>
-    <h1>THUMBNAIL CAROUSEL</h1>
+    <div style="background-color: black;"><h1 style="color: white;">THUMBNAIL CAROUSEL</h1></div>
     <br>
     <div class="container">
       <!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
@@ -65,6 +65,7 @@
           </ul>
         </div>
       </section>
+      <br>
       <section
         id="thumbnail-carousel"
         class="splide"
@@ -134,48 +135,6 @@
       } );
     </script>
 
-    <script>
-      new Splide( '#thumbnail-carousel', {
-        fixedWidth : 100,
-        fixedHeight: 60,
-        gap        : 10,
-        rewind     : true,
-        pagination : false,
-        focus      : 'center',
-        breakpoints: {
-          600: {
-            fixedWidth : 60,
-            fixedHeight: 44,
-          },
-        },
-      } ).mount();
-    </script>
-
-    <script>
-      new Splide( '#thumbnail-carousel', {
-        fixedWidth  : 100,
-        fixedHeight : 60,
-        gap         : 10,
-        rewind      : true,
-        pagination  : false,
-        isNavigation: true,
-        breakpoints : {
-          600: {
-            fixedWidth : 60,
-            fixedHeight: 44,
-          },
-        },
-      } ).mount();
-    </script>
-
-    <script>
-      var main = new Splide( '#main-carousel', {
-        type      : 'fade',
-        rewind    : true,
-        pagination: false,
-        arrows    : false,
-      } );
-    </script>
 
     <script>
       document.addEventListener( 'DOMContentLoaded', function () {
@@ -193,6 +152,7 @@
           gap         : 10,
           rewind      : true,
           pagination  : false,
+          focus      : 'center',
           isNavigation: true,
           breakpoints : {
             600: {
